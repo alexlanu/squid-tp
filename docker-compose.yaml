@@ -1,7 +1,7 @@
 services:
-  squid:
-    image: alexlanu/squid-ssl:6.14.3
-    container_name: squid-ssl
+  squid-tp:
+    image: alexlanu/squid-tp:latest
+    container_name: squid-tp
     network_mode: host
     restart: unless-stopped
     volumes:
