@@ -6,7 +6,7 @@ table ip tp-nat {
     }
 }
 
-table inet tp-access {
+table inet ip {
     set px_access {
          type ipv4_addr
          flags interval
