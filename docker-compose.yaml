@@ -1,0 +1,9 @@
+services:
+  squid:
+    image: alexlanu/squid-ssl:6.14.3
+    container_name: squid-ssl
+    network_mode: host
+    restart: unless-stopped
+    volumes:
+        - ./config/:/etc/squid:ro
+        - ./logs:/var/log/squid/:rw

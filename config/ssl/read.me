@@ -1,0 +1,5 @@
+mkdir -p /etc/squid/ssl
+openssl req -new -newkey rsa:2048 -days 365 -nodes -x509 \
+  -keyout /etc/squid/ssl/squid.key -out /etc/squid/ssl/squid.crt
+
+cat /etc/squid/ssl/squid.crt /etc/squid/ssl/squid.key > /etc/squid/ssl/squid.pem
